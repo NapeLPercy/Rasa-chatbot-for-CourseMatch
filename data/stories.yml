@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+  - story: greeting path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: goodbye path
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: user asks about pricing
+    steps:
+      - intent: ask_pricing
+      - action: utter_pricing
+
+  - story: ask about coursematch
+    steps:
+      - intent: ask_what_is_coursematch
+      - action: utter_what_is_coursematch
+
+  - story: explain ai
+    steps:
+      - intent: ask_ai_features
+      - action: utter_ai_features
+
+  - story: user asks about aps
+    steps:
+      - intent: ask_aps
+      - action: utter_aps
+
+  - story: user asks how coursematch works
+    steps:
+      - intent: ask_how_it_works
+      - action: utter_how_it_works
+
+  - story: user asks for support
+    steps:
+      - intent: ask_support
+      - action: utter_support
+
+  - story: user ask how universities computes aps
+    steps:
+      - intent: ask_aps_computation
+      - action: utter_aps_computation
+
+  - story: user ask about prerequisites subjects
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_prerequisites
+
+  - story: user ask how to get started
+    steps:
+      - intent: ask_get_started
+      - action: utter_get_started
+  
+  
+  

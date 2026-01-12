@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-aps_score",
+      "2": "I-aps_score",
+      "3": "L-aps_score",
+      "4": "U-aps_score",
+      "5": "B-subject",
+      "6": "I-subject",
+      "7": "L-subject",
+      "8": "U-subject",
+      "9": "B-user_type",
+      "10": "I-user_type",
+      "11": "L-user_type",
+      "12": "U-user_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-aps_score": 1,
+      "I-aps_score": 2,
+      "L-aps_score": 3,
+      "U-aps_score": 4,
+      "B-subject": 5,
+      "I-subject": 6,
+      "L-subject": 7,
+      "U-subject": 8,
+      "B-user_type": 9,
+      "I-user_type": 10,
+      "L-user_type": 11,
+      "U-user_type": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

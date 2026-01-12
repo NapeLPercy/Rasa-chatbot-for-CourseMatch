@@ -1,0 +1,121 @@
+version: "3.1"
+
+#intents
+intents:
+  - greet
+  - affirm
+  - goodbye
+  - thank_you
+  - ask_what_is_coursematch
+  - ask_how_it_works
+  - ask_aps
+  - ask_prerequisites
+  - ask_ai_features
+  - ask_who_is_it_for
+  - ask_get_started
+  - ask_support
+  - ask_pricing
+  - user_type
+  - subject
+  - ask_aps_computation
+
+#entities
+entities:
+  - aps_score
+  - subject
+  - user_type
+
+#slots
+slots:
+  user_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+  subject:
+    type: list
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: subject
+
+  aps_score:
+    type: float
+    min_value: 0
+    max_value: 50
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: aps_score
+
+#forms
+forms:
+  eligibility_form:
+    required_slots:
+      - aps_score
+      - subject
+
+#responses
+responses:
+  utter_greet:
+    - text: "Hey 👋 Welcome to CourseMatch! How can I help you?"
+
+  utter_goodbye:
+    - text: "Goodbye 👋 Best of luck with your studies!"
+
+  utter_thank_you:
+    - text: "You’re welcome 😊"
+
+  utter_what_is_coursematch:
+    - text: "CourseMatch is an AI-powered platform that helps students explore courses based on APS scores and subject requirements."
+
+  utter_how_it_works:
+    - text: "CourseMatch uses AI to explain course requirements clearly and guide students through their options."
+
+  utter_aps:
+    - text: "APS is an Admission Point Score calculated from your school subjects and marks."
+
+  utter_prerequisites:
+    - text: "Prerequisites are subjects or minimum marks required before applying for a course."
+
+  utter_ai_features:
+    - text: "CourseMatch uses AI to simplify requirements and assist students through smart guidance."
+
+  utter_who_is_it_for:
+    - text: "CourseMatch is built for students, parents, and anyone exploring higher education options."
+
+  utter_get_started:
+    - text: "You can get started by exploring courses and chatting with me whenever you need help."
+
+  utter_support:
+    - text: "You can ask me questions anytime or use the support options on the platform."
+
+  utter_fallback:
+    - text: " I’m not sure I understood that 🤔
+        You can ask me about CourseMatch, pricing, APS scores,
+        prerequisites, or how the platform works."
+
+  utter_pricing:
+    - text: "CourseMatch is currently free for students 🎓
+        Our goal is to help learners explore courses, understand requirements,
+        and make informed decisions using AI — at no cost.
+        Premium features may be added in the future, but core access remains free."
+
+  utter_aps_computation:
+    - text: "Diffrent South african universitiescomputer thier APS diffrent. generally, 
+    Life Orientation & any level 1 subjects are excluded"
+
+  #responses rel to forms
+  utter_ask_aps_score:
+    - text: "What is your APS score?"
+
+  utter_ask_subject:
+    - text: "Which subjects did you take?"
+
+  utter_form_complete:
+    - text: "Thanks! I’ve got your APS and subjects. I can now check course options."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

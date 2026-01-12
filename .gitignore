@@ -1,0 +1,26 @@
+# Python
+_pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Rasa
+models/
+results/
+logs/
+rasa.db
+rasa.db-journal
+
+# Virtual Environment
+venv/
+.env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
