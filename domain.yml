@@ -18,6 +18,8 @@ intents:
   - user_type
   - subject
   - ask_aps_computation
+  - ask_about_personality_profile
+  - ask_how_to_complete_personality_profile
 
 #entities
 entities:
@@ -80,7 +82,9 @@ responses:
     - text: "Prerequisites are subjects or minimum marks required before applying for a course."
 
   utter_ai_features:
-    - text: "CourseMatch uses AI to simplify requirements and assist students through smart guidance."
+    - text: "CourseMatch uses AI to simplify requirements and assist students through smart guidance.
+    The full features include AI recommended courses, courses comparisons, career deep dive, APS \
+    calculators and NSFAS eligibility checker"
 
   utter_who_is_it_for:
     - text: "CourseMatch is built for students, parents, and anyone exploring higher education options."
@@ -105,6 +109,18 @@ responses:
   utter_aps_computation:
     - text: "Diffrent South african universitiescomputer thier APS diffrent. generally, 
     Life Orientation & any level 1 subjects are excluded"
+  
+  utter_personality_profile:
+    - text: "The personality profile helps CourseMatch understand your interests,
+        career goals, preferred working style, strengths, and hobbies. This
+        information allows us to recommend courses and careers that better
+        match who you are, not just your academic results."
+
+  utter_how_to_complete_personality_profile:
+    - text: "Answer each question honestly based on your interests, preferences,
+        and career aspirations. There are no right or wrong answers—the more
+        accurately your responses reflect you, the better CourseMatch can
+        personalize its recommendations."
 
   #responses rel to forms
   utter_ask_aps_score:

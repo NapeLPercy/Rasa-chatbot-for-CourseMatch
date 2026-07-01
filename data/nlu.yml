@@ -84,8 +84,26 @@ nlu:
     examples: |
       - How do i know my aps
       - How university know my aps
-      - how was my aps counted         
+      - how was my aps counted 
 
+- intent: ask_about_personality_profile
+  examples: |
+    - What is a personality profile?
+    - What does the personality profile mean?
+    - Tell me about the personality profile.
+    - What is the purpose of the personality profile?
+    - Why do I need to complete the personality profile?
+    - Explain the personality profile.
+
+- intent: ask_how_to_complete_personality_profile
+  examples: |
+    - How do I fill in the personality profile?
+    - How do I complete the personality profile?
+    - How should I answer the personality profile?
+    - Can you help me complete the personality profile?
+    - What's the best way to fill out the personality profile?
+    - How do I answer the personality profile questions?
+       
 # intents and examples that include entities
   - intent: ask_prerequisites
     examples: |

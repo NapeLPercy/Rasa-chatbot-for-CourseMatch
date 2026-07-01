@@ -1,26 +1,23 @@
 # Python
-_pycache__/
-*.pyc
-*.pyo
-*.pyd
+__pycache__/
+*.py[cod]
+
+# Virtual environments
 .venv/
 venv/
 
+# Environment variables
+.env
+
 # Rasa
+.rasa/
 models/
 results/
 logs/
 rasa.db
 rasa.db-journal
 
-# Virtual Environment
-venv/
-.env/
-
-# OS junk
+# OS
 .DS_Store
 Thumbs.db
-
-# Env
-.env
 
