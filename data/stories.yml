@@ -56,12 +56,12 @@ stories:
       - intent: ask_get_started
       - action: utter_get_started
 
-- story: user asks about personality profile
-  steps:
-    - intent: ask_about_personality_profile
-    - action: utter_personality_profile
+  - story: user asks about personality profile
+    steps:
+      - intent: ask_about_personality_profile
+      - action: utter_personality_profile
 
-- story: user asks how to complete personality profile
-  steps:
-    - intent: ask_how_to_complete_personality_profile
-    - action: utter_how_to_complete_personality_profile
+  - story: user asks how to complete personality profile
+    steps:
+      - intent: ask_how_to_complete_personality_profile
+      - action: utter_how_to_complete_personality_profile

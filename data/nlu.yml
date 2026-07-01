@@ -56,6 +56,7 @@ nlu:
       - how do i start
       - how can i use coursematch
       - what should i do first
+      - how do i begin
 
   - intent: ask_support
     examples: |
@@ -84,25 +85,27 @@ nlu:
     examples: |
       - How do i know my aps
       - How university know my aps
-      - how was my aps counted 
+      - how was my aps counted
+      - how to calculate my aps
 
-- intent: ask_about_personality_profile
-  examples: |
-    - What is a personality profile?
-    - What does the personality profile mean?
-    - Tell me about the personality profile.
-    - What is the purpose of the personality profile?
-    - Why do I need to complete the personality profile?
-    - Explain the personality profile.
+  - intent: ask_about_personality_profile
+    examples: |
+      - What is a personality profile?
+      - What does the personality profile mean?
+      - Tell me about the personality profile.
+      - What is the purpose of the personality profile?
+      - Why do I need to complete the personality profile?
+      - Explain the personality profile.
 
-- intent: ask_how_to_complete_personality_profile
-  examples: |
-    - How do I fill in the personality profile?
-    - How do I complete the personality profile?
-    - How should I answer the personality profile?
-    - Can you help me complete the personality profile?
-    - What's the best way to fill out the personality profile?
-    - How do I answer the personality profile questions?
+  - intent: ask_how_to_complete_personality_profile
+    examples: |
+      - How do I fill in the personality profile?
+      - How do I complete the personality profile?
+      - How should I answer the personality profile?
+      - Can you help me complete the personality profile?
+      - What's the best way to fill out the personality profile?
+      - How do I answer the personality profile questions?
+      - how to submit personality profile
        
 # intents and examples that include entities
   - intent: ask_prerequisites
@@ -152,12 +155,12 @@ nlu:
        - life orientation
 
   - synonym: english
-     examples: |
+    examples: |
        - english fallback
        - english first additional language
  
-   - synonym: english
-     examples: |
+  - synonym: english
+    examples: |
        - english fallback
        - english first additional language
 
