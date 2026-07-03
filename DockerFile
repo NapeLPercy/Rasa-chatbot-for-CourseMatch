@@ -6,4 +6,5 @@ COPY . /app
 
 EXPOSE 8080
 
-CMD ["run", "--enable-api", "--cors", "*", "--port", "8080"] 
+#CMD ["run", "--enable-api", "--cors", "*", "--port", "8080"] 
+CMD ["run","--model","/app/models/20260701-163739-exhaustive-configuration.tar.gz","--enable-api","--cors","*","--port","8080"]
