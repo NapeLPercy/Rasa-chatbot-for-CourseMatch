@@ -1,0 +1,82 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT ARE SUBJECTS FOR
+  # =========================
+  - intent: ask_subject_importance
+    examples: |
+      - why are subjects important
+      - why do subjects matter for university
+      - how do subjects affect my future
+      - why do i need certain subjects
+      - what is the role of subjects
+      - why are school subjects important
+      - how do subjects influence careers
+      - why do universities care about subjects
+      - do subjects matter for admission
+      - how important are my subjects
+
+  # =========================
+  # SUBJECT REQUIREMENTS (GENERAL)
+  # =========================
+  - intent: ask_subject_requirements
+    examples: |
+      - what are subject requirements
+      - why do courses need specific subjects
+      - what subjects are required for university
+      - why do degrees have subject requirements
+      - what do subject requirements mean
+      - how do subject requirements work
+      - why can't i study without certain subjects
+      - what subjects do i need in school
+      - how do subjects affect admission
+      - why are some subjects compulsory
+
+  # =========================
+  # CAN I STUDY WITHOUT CERTAIN SUBJECTS
+  # =========================
+  - intent: ask_subject_exclusions
+    examples: |
+      - can i study without maths
+      - can i do university without physics
+      - what if i don't have science
+      - can i study without accounting
+      - is maths compulsory for all courses
+      - can i get into university without maths literacy
+      - what happens if i didn't take certain subjects
+      - can i still study if i failed maths
+      - do i need maths for every course
+      - are there courses without maths
+
+  # =========================
+  # SUBJECT CHANGES
+  # =========================
+  - intent: ask_subject_changes
+    examples: |
+      - can i change my subjects
+      - is it possible to change subjects in matric
+      - what if i chose the wrong subjects
+      - can i switch subjects
+      - when can i change my subjects
+      - is it too late to change subjects
+      - how do subject changes work
+      - can i still change my subject combination
+      - what if i regret my subjects
+      - can i upgrade my subjects later
+
+  # =========================
+  # BEST SUBJECTS FOR CAREERS (GENERAL)
+  # =========================
+  - intent: ask_best_subjects_for_career
+    examples: |
+      - what subjects should i take for engineering
+      - which subjects are best for medicine
+      - what subjects do i need for law
+      - best subjects for accounting
+      - what subjects lead to good careers
+      - which subjects should i choose
+      - what subjects help with university
+      - what subjects are needed for science careers
+      - what subjects are required for business
+      - what subjects should i pick in school

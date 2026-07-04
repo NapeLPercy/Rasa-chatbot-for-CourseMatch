@@ -1,136 +1,281 @@
 version: "3.1"
 
-#intents
 intents:
   - greet
-  - affirm
   - goodbye
+  - affirm
+  - deny
   - thank_you
+  - bot_challenge
+  - out_of_scope
   - ask_what_is_coursematch
   - ask_how_it_works
-  - ask_aps
-  - ask_prerequisites
-  - ask_ai_features
+  - ask_features
+  - ask_benefits
   - ask_who_is_it_for
   - ask_get_started
-  - ask_support
   - ask_pricing
-  - user_type
-  - subject
+  - ask_aps
   - ask_aps_computation
+  - ask_aps_importance
+  - ask_aps_requirement
+  - ask_aps_maximum
+  - ask_what_are_courses
+  - ask_course_recommendations
+  - ask_course_requirements
+  - ask_course_duration
+  - ask_course_careers
+  - ask_course_comparison
+  - ask_career_guidance
+  - ask_subject_importance
+  - ask_subject_requirements
+  - ask_subject_exclusions
+  - ask_subject_changes
+  - ask_best_subjects_for_career
+  - ask_what_is_university
+  - ask_university_types
+  - ask_choose_university
+  - ask_university_application
+  - ask_university_life
+  - ask_university_requirements
+  - ask_ai_features
+  - ask_ai_recommendations
+  - ask_chatbot
+  - ask_support
+  - ask_feedback
+  - ask_account
   - ask_about_personality_profile
+  - ask_personality_purpose
   - ask_how_to_complete_personality_profile
+  - ask_personality_accuracy
+  - ask_personality_recommendation_link
 
-#entities
-entities:
-  - aps_score
-  - subject
-  - user_type
-
-#slots
-slots:
-  user_type:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_text
-
-  subject:
-    type: list
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: subject
-
-  aps_score:
-    type: float
-    min_value: 0
-    max_value: 50
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: aps_score
-
-#forms
-forms:
-  eligibility_form:
-    required_slots:
-      - aps_score
-      - subject
-
-#responses
 responses:
   utter_greet:
-    - text: "Hey 👋 Welcome to CourseMatch! How can I help you?"
+    - text: >
+        Hi 👋 Welcome to CourseMatch. I can help you understand APS, explore courses,
+        and guide you through study choices. How can I help you today?
 
   utter_goodbye:
-    - text: "Goodbye 👋 Best of luck with your studies!"
+    - text: >
+        Goodbye 👋 Good luck with your studies!
 
   utter_thank_you:
-    - text: "You’re welcome 😊"
+    - text: >
+        You’re welcome 👍 Happy to help!
 
+  utter_iamabot:
+    - text: >
+        I’m CourseMatch AI 🤖, your assistant for course guidance, APS info, and university planning.
+
+  utter_out_of_scope:
+    - text: >
+        I can help you with APS, courses, subjects, and universities. Try asking something like
+        “What APS do I need for Nursing?”
+
+  utter_default:
+    - text: >
+        Sorry, I didn’t quite understand that. Could you rephrase it?
+
+  #========coursematch.yml
   utter_what_is_coursematch:
-    - text: "CourseMatch is an AI-powered platform that helps students explore courses based on APS scores and subject requirements."
+    - text: >
+        CourseMatch is an AI-powered platform that helps students discover the right courses
+        based on their APS, subjects, and career interests.
 
   utter_how_it_works:
-    - text: "CourseMatch uses AI to explain course requirements clearly and guide students through their options."
+    - text: >
+        You enter your APS and subjects, and CourseMatch analyses your profile to suggest
+        suitable university courses and career paths.
 
-  utter_aps:
-    - text: "APS is an Admission Point Score calculated from your school subjects and marks."
+  utter_features:
+    - text: >
+        CourseMatch helps you compare courses, check requirements, explore careers,
+        and get AI-powered recommendations.
 
-  utter_prerequisites:
-    - text: "Prerequisites are subjects or minimum marks required before applying for a course."
-
-  utter_ai_features:
-    - text: "CourseMatch uses AI to simplify requirements and assist students through smart guidance.
-    The full features include AI recommended courses, courses comparisons, career deep dive, APS \
-    calculators and NSFAS eligibility checker"
+  utter_benefits:
+    - text: >
+        It saves time, reduces confusion, and helps you make better study decisions
+        based on your academic profile.
 
   utter_who_is_it_for:
-    - text: "CourseMatch is built for students, parents, and anyone exploring higher education options."
+    - text: >
+        CourseMatch is designed for high school learners and anyone planning university studies.
 
   utter_get_started:
-    - text: "You can get started by exploring courses and chatting with me whenever you need help."
-
-  utter_support:
-    - text: "You can ask me questions anytime or use the support options on the platform."
-
-  utter_fallback:
-    - text: " I’m not sure I understood that 🤔
-        You can ask me about CourseMatch, pricing, APS scores,
-        prerequisites, or how the platform works."
+    - text: >
+        Start by entering your APS and subjects, then explore your course recommendations.
 
   utter_pricing:
-    - text: "CourseMatch is currently free for students 🎓
-        Our goal is to help learners explore courses, understand requirements,
-        and make informed decisions using AI — at no cost.
-        Premium features may be added in the future, but core access remains free."
+    - text: >
+        CourseMatch is currently free to use for all students.
+  #=========aps.yml
+  utter_aps:
+    - text: >
+        APS (Admission Point Score) is a points system used by universities to determine
+        whether you qualify for a course based on your school results.
 
   utter_aps_computation:
-    - text: "Diffrent South african universitiescomputer thier APS diffrent. generally, 
-    Life Orientation & any level 1 subjects are excluded"
-  
+    - text: >
+        APS is calculated by converting your subject percentages into points and adding
+        them together, usually based on your best subjects excluding Life Orientation.
+
+  utter_aps_importance:
+    - text: >
+        APS is important because universities use it to filter applicants and determine
+        if you meet the minimum entry requirements for a course.
+
+  utter_aps_requirement:
+    - text: >
+        The required APS depends on the course and university. Competitive courses like
+        Medicine or Engineering usually require higher APS scores.
+
+  utter_aps_maximum:
+    - text: >
+        The maximum APS depends on the system used, but most South African universities
+        use a scale where the highest possible APS is around 42.
+
+  #=============qualifications.yml
+  utter_what_are_courses:
+    - text: >
+        A university course (or degree) is a structured program of study that leads to a qualification
+        such as a diploma, degree, or certificate.
+
+  utter_course_recommendations:
+    - text: >
+        CourseMatch uses your APS, subjects, and interests to suggest courses that match your academic profile.
+
+  utter_course_requirements:
+    - text: >
+        Course requirements are the minimum subjects and APS scores needed to qualify for a specific program.
+
+  utter_course_duration:
+    - text: >
+        Course duration depends on the qualification. Degrees usually take 3–4 years, while diplomas may take 1–3 years.
+
+  utter_course_careers:
+    - text: >
+        Different courses lead to different career paths. For example, engineering leads to technical roles,
+        while business leads to management and finance careers.
+
+  utter_course_comparison:
+    - text: >
+        Course comparison helps you understand differences in requirements, duration, difficulty, and career outcomes.
+
+  utter_career_guidance:
+    - text: >
+        Career guidance helps you choose a suitable career based on your strengths, interests, and academic results.
+
+  #======subjects.yml
+  utter_subject_importance:
+    - text: >
+        Subjects are important because they determine what university courses you qualify for
+        and influence your future career options.
+
+  utter_subject_requirements:
+    - text: >
+        Subject requirements are specific school subjects needed for certain university courses.
+
+  utter_subject_exclusions:
+    - text: >
+        Some courses require specific subjects like Maths or Science, but there are also
+        programs that do not require them depending on the field of study.
+
+  utter_subject_changes:
+    - text: >
+        Subject changes are sometimes possible, but they depend on your school rules and timing.
+
+  utter_best_subjects_for_career:
+    - text: >
+        The best subjects depend on your intended career. For example, Maths and Science
+        are important for engineering and medicine, while business subjects help with commerce careers.
+
+  #=======universities]
+
+  utter_what_is_university:
+    - text: >
+        A university is a higher education institution where students study for degrees,
+        diplomas, or certificates after completing school.
+
+  utter_university_types:
+    - text: >
+        There are different types of universities, including traditional universities,
+        universities of technology, and comprehensive universities.
+
+  utter_choose_university:
+    - text: >
+        Choosing a university depends on factors like courses offered, location, costs,
+        admission requirements, and career goals.
+
+  utter_university_application:
+    - text: >
+        University applications involve submitting your school results, personal details,
+        and meeting specific course requirements before deadlines.
+
+  utter_university_life:
+    - text: >
+        University life is more independent than school and involves lectures, assignments,
+        exams, and social campus life.
+
+  utter_university_requirements:
+    - text: >
+        Universities typically require a National Senior Certificate and a minimum APS score
+        depending on the course you want to study.
+
+  ##ai.yml
+
+  utter_ai_features:
+    - text: >
+        CourseMatch uses AI to analyze your APS, subjects, and preferences to suggest suitable study options.
+
+  utter_ai_recommendations:
+    - text: >
+        Recommendations are generated by matching your academic profile with course requirements and historical patterns.
+
+  utter_chatbot:
+    - text: >
+        I’m an AI assistant designed to help you explore courses, understand APS, and make study decisions.
+
+#=====support.yml
+
+  utter_support:
+    - text: >
+        You can get help by using the support section or contacting the CourseMatch team for assistance.
+
+  utter_feedback:
+    - text: >
+        We appreciate feedback! You can share suggestions or report issues through the feedback section.
+
+#======acount.yml
+
+  utter_account:
+    - text: >
+        You can create an account to save your results, track recommendations, and personalize your experience.
+
+#=====personality.yml
+
   utter_personality_profile:
-    - text: "The personality profile helps CourseMatch understand your interests,
-        career goals, preferred working style, strengths, and hobbies. This
-        information allows us to recommend courses and careers that better
-        match who you are, not just your academic results."
+    - text: >
+        The personality profile helps CourseMatch understand your interests, strengths, and working style
+        so we can suggest courses that fit you better.
+
+  utter_personality_purpose:
+    - text: >
+        Your personality profile is used together with your APS and subjects to improve course recommendations
+        and suggest careers that match your natural strengths.
 
   utter_how_to_complete_personality_profile:
-    - text: "Answer each question honestly based on your interests, preferences,
-        and career aspirations. There are no right or wrong answers—the more
-        accurately your responses reflect you, the better CourseMatch can
-        personalize its recommendations."
+    - text: >
+        You complete the profile by answering simple questions about your preferences, interests, and study style.
 
-  #responses rel to forms
-  utter_ask_aps_score:
-    - text: "What is your APS score?"
+  utter_personality_accuracy:
+    - text: >
+        The personality profile is not a test you can fail. It is used to guide recommendations and can be updated anytime.
 
-  utter_ask_subject:
-    - text: "Which subjects did you take?"
+  utter_personality_recommendation_link:
+    - text: >
+        Personality data helps CourseMatch match you with careers and courses that fit your strengths, interests, and study behaviour.
 
-  utter_form_complete:
-    - text: "Thanks! I’ve got your APS and subjects. I can now check course options."
 
 session_config:
   session_expiration_time: 60

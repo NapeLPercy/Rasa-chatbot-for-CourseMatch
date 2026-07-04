@@ -1,0 +1,116 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT IS COURSEMATCH
+  # =========================
+  - intent: ask_what_is_coursematch
+    examples: |
+      - what is coursematch
+      - tell me about coursematch
+      - what does coursematch do
+      - what is this platform
+      - what is this website for
+      - explain coursematch
+      - what is the purpose of coursematch
+      - what exactly is coursematch
+      - how would you describe coursematch
+      - what is coursematch used for
+      - can you explain this app
+
+  # =========================
+  # HOW IT WORKS
+  # =========================
+  - intent: ask_how_it_works
+    examples: |
+      - how does coursematch work
+      - how do i use coursematch
+      - how does this platform work
+      - explain how it works
+      - how does the system work
+      - what are the steps to use it
+      - how do i get started
+      - how do students use this
+      - walk me through coursematch
+      - how does this app function
+      - how does it help students
+
+  # =========================
+  # FEATURES
+  # =========================
+  - intent: ask_features
+    examples: |
+      - what features does coursematch have
+      - what can i do here
+      - what does this platform offer
+      - what tools are available
+      - what services do you provide
+      - what can i use coursematch for
+      - explain the features
+      - what makes coursematch useful
+      - what do i get from this app
+      - what functionality does it have
+
+  # =========================
+  # BENEFITS
+  # =========================
+  - intent: ask_benefits
+    examples: |
+      - why should i use coursematch
+      - what are the benefits
+      - how does this help me
+      - why is this useful
+      - what value does it give
+      - why do students use this
+      - what problem does it solve
+      - how does it help me choose courses
+      - why would i need this platform
+      - is this useful for students
+
+  # =========================
+  # WHO IS IT FOR
+  # =========================
+  - intent: ask_who_is_it_for
+    examples: |
+      - who is coursematch for
+      - is this for students
+      - can high school learners use this
+      - is this for university students
+      - who should use this app
+      - is this only for matric students
+      - is this for parents too
+      - who is the target audience
+      - can anyone use this
+      - is this meant for learners
+
+  # =========================
+  # GET STARTED
+  # =========================
+  - intent: ask_get_started
+    examples: |
+      - how do i get started
+      - what should i do first
+      - how do i begin
+      - how do i start using coursematch
+      - guide me to start
+      - onboarding steps
+      - what is the first step
+      - how do i sign up
+      - how do i use this from scratch
+      - i just joined how do i start
+
+  # =========================
+  # PRICING
+  # =========================
+  - intent: ask_pricing
+    examples: |
+      - is coursematch free
+      - how much does it cost
+      - do i have to pay
+      - pricing information
+      - what is the price
+      - is there a fee
+      - is this paid or free
+      - do i need a subscription
+      - how expensive is it
+      - cost of using coursematch

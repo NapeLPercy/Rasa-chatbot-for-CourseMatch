@@ -1,0 +1,116 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT ARE COURSES
+  # =========================
+  - intent: ask_what_are_courses
+    examples: |
+      - what are courses
+      - what does a university course mean
+      - what is a degree
+      - explain university courses
+      - what do you mean by course
+      - what is a qualification
+      - what is a study program
+      - what is a degree program
+      - how do courses work
+      - what is a university course
+      - what are study programs
+
+  # =========================
+  # COURSE RECOMMENDATIONS (CONCEPTUAL ONLY)
+  # =========================
+  - intent: ask_course_recommendations
+    examples: |
+      - how do you recommend courses
+      - how does course recommendation work
+      - how are courses suggested
+      - how do i get course suggestions
+      - how does the system choose courses for me
+      - how do you know what course is right for me
+      - what is the recommendation process
+      - how are study recommendations made
+      - why am i seeing these courses
+      - how does ai pick courses
+      - how does matching work
+
+  # =========================
+  # COURSE REQUIREMENTS (GENERAL CONCEPT)
+  # =========================
+  - intent: ask_course_requirements
+    examples: |
+      - what are course requirements
+      - why do courses have requirements
+      - what do i need for a course
+      - what are entry requirements
+      - why do universities set requirements
+      - what is needed to study a course
+      - what determines if i can study a course
+      - why can't i just pick any course
+      - how do requirements work
+      - what do courses expect from students
+
+  # =========================
+  # COURSE DURATION
+  # =========================
+  - intent: ask_course_duration
+    examples: |
+      - how long are courses
+      - how many years is a degree
+      - what is the duration of a course
+      - how long does university take
+      - how long do studies last
+      - how many years is a diploma
+      - how long is a degree program
+      - course length
+      - study duration
+      - how long do i study for
+
+  # =========================
+  # CAREERS FROM COURSES
+  # =========================
+  - intent: ask_course_careers
+    examples: |
+      - what jobs can i get after studying
+      - what can i become with this degree
+      - careers from courses
+      - what can i do after university
+      - job opportunities after studying
+      - what career paths are available
+      - what can i work as after studying
+      - how do courses relate to jobs
+      - what jobs come from degrees
+      - what can i do with a qualification
+
+  # =========================
+  # COURSE COMPARISON (CONCEPT ONLY)
+  # =========================
+  - intent: ask_course_comparison
+    examples: |
+      - what is course comparison
+      - how do you compare courses
+      - why compare courses
+      - what does comparing courses mean
+      - how do i choose between courses
+      - what is the difference between courses
+      - how does comparison work
+      - why is course comparison useful
+      - how do students compare degrees
+      - what should i consider when comparing courses
+
+  # =========================
+  # CAREER GUIDANCE (GENERAL)
+  # =========================
+  - intent: ask_career_guidance
+    examples: |
+      - can you help me choose a career
+      - how do i choose a career
+      - what career should i study for
+      - how do i decide what to study
+      - help me pick a career
+      - how does career guidance work
+      - what should i study
+      - i'm not sure what career to choose
+      - how do people choose careers
+      - how do i find the right career

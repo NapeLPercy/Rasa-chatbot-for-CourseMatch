@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Subject importance
+    steps:
+      - intent: ask_subject_importance
+      - action: utter_subject_importance
+
+  - rule: Subject requirements
+    steps:
+      - intent: ask_subject_requirements
+      - action: utter_subject_requirements
+
+  - rule: Subject exclusions
+    steps:
+      - intent: ask_subject_exclusions
+      - action: utter_subject_exclusions
+
+  - rule: Subject changes
+    steps:
+      - intent: ask_subject_changes
+      - action: utter_subject_changes
+
+  - rule: Best subjects for careers
+    steps:
+      - intent: ask_best_subjects_for_career
+      - action: utter_best_subjects_for_career

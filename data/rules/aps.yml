@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Explain APS
+    steps:
+      - intent: ask_aps
+      - action: utter_aps
+
+  - rule: APS calculation
+    steps:
+      - intent: ask_aps_computation
+      - action: utter_aps_computation
+
+  - rule: APS importance
+    steps:
+      - intent: ask_aps_importance
+      - action: utter_aps_importance
+
+  - rule: APS requirement
+    steps:
+      - intent: ask_aps_requirement
+      - action: utter_aps_requirement
+
+  - rule: APS maximum
+    steps:
+      - intent: ask_aps_maximum
+      - action: utter_aps_maximum

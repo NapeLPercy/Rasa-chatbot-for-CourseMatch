@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+  - rule: Explain what courses are
+    steps:
+      - intent: ask_what_are_courses
+      - action: utter_what_are_courses
+
+  - rule: Course recommendations concept
+    steps:
+      - intent: ask_course_recommendations
+      - action: utter_course_recommendations
+
+  - rule: Course requirements explanation
+    steps:
+      - intent: ask_course_requirements
+      - action: utter_course_requirements
+
+  - rule: Course duration explanation
+    steps:
+      - intent: ask_course_duration
+      - action: utter_course_duration
+
+  - rule: Course careers explanation
+    steps:
+      - intent: ask_course_careers
+      - action: utter_course_careers
+
+  - rule: Course comparison explanation
+    steps:
+      - intent: ask_course_comparison
+      - action: utter_course_comparison
+
+  - rule: Career guidance explanation
+    steps:
+      - intent: ask_career_guidance
+      - action: utter_career_guidance

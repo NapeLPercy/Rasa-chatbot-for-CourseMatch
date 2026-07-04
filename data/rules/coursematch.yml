@@ -1,0 +1,38 @@
+version: "3.1"
+
+rules:
+  - rule: What is CourseMatch
+    steps:
+      - intent: ask_what_is_coursematch
+      - action: utter_what_is_coursematch
+
+  - rule: How it works
+    steps:
+      - intent: ask_how_it_works
+      - action: utter_how_it_works
+
+  - rule: Features
+    steps:
+      - intent: ask_features
+      - action: utter_features
+
+  - rule: Benefits
+    steps:
+      - intent: ask_benefits
+      - action: utter_benefits
+
+  - rule: Who is it for
+    steps:
+      - intent: ask_who_is_it_for
+      - action: utter_who_is_it_for
+
+  - rule: Get started
+    steps:
+      - intent: ask_get_started
+      - action: utter_get_started
+
+  - rule: Pricing
+    steps:
+      - intent: ask_pricing
+      - action: utter_pricing
+

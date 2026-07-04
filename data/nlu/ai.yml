@@ -1,0 +1,50 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # AI FEATURES
+  # =========================
+  - intent: ask_ai_features
+    examples: |
+      - what ai features do you have
+      - is coursematch ai powered
+      - how does the ai work
+      - what does the ai do
+      - how is ai used in coursematch
+      - what makes this ai special
+      - how smart is the ai
+      - does this use artificial intelligence
+      - what can the ai help with
+      - how does ai help students
+
+  # =========================
+  # HOW AI RECOMMENDATIONS WORK
+  # =========================
+  - intent: ask_ai_recommendations
+    examples: |
+      - how does ai recommend courses
+      - how are recommendations generated
+      - why did the ai suggest this course
+      - how do you decide recommendations
+      - how does matching work
+      - what algorithm do you use
+      - how do you know what i should study
+      - how does personalization work
+      - how are results calculated
+      - is this personalized
+
+  # =========================
+  # CHATBOT CAPABILITIES
+  # =========================
+  - intent: ask_chatbot
+    examples: |
+      - what can you do
+      - what are your capabilities
+      - how can you help me
+      - what should i ask you
+      - what is your purpose
+      - are you just a chatbot
+      - what do you help with
+      - what is your function
+      - can you guide me
+      - what are you able to do

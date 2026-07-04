@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Explain personality profile
+    steps:
+      - intent: ask_about_personality_profile
+      - action: utter_personality_profile
+
+  - rule: Personality purpose
+    steps:
+      - intent: ask_personality_purpose
+      - action: utter_personality_purpose
+
+  - rule: How to complete personality profile
+    steps:
+      - intent: ask_how_to_complete_personality_profile
+      - action: utter_how_to_complete_personality_profile
+
+  - rule: Personality accuracy
+    steps:
+      - intent: ask_personality_accuracy
+      - action: utter_personality_accuracy
+
+  - rule: Personality recommendation link
+    steps:
+      - intent: ask_personality_recommendation_link
+      - action: utter_personality_recommendation_link

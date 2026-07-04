@@ -1,0 +1,98 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT ARE UNIVERSITIES
+  # =========================
+  - intent: ask_what_is_university
+    examples: |
+      - what is a university
+      - what does university mean
+      - what is tertiary education
+      - explain university
+      - what happens at university
+      - what is higher education
+      - what is a university for
+      - what do you do at university
+      - why do people go to university
+      - what is studying at university like
+
+  # =========================
+  # TYPES OF UNIVERSITIES
+  # =========================
+  - intent: ask_university_types
+    examples: |
+      - are all universities the same
+      - what types of universities exist
+      - difference between universities
+      - public vs private universities
+      - what is a traditional university
+      - are there different kinds of universities
+      - what is a university of technology
+      - what makes universities different
+      - how do universities differ
+      - types of higher education institutions
+
+  # =========================
+  # HOW TO CHOOSE A UNIVERSITY
+  # =========================
+  - intent: ask_choose_university
+    examples: |
+      - how do i choose a university
+      - what university should i go to
+      - how to pick a university
+      - how do students choose universities
+      - what should i consider when choosing a university
+      - how do i decide where to study
+      - what is the best university for me
+      - how do i compare universities
+      - how to select a university
+      - what factors matter when choosing a university
+
+  # =========================
+  # APPLICATION PROCESS (GENERAL)
+  # =========================
+  - intent: ask_university_application
+    examples: |
+      - how do university applications work
+      - how do i apply to university
+      - what is the application process
+      - when do applications open
+      - how do students apply for university
+      - what do i need to apply
+      - how does admission work
+      - how do i submit an application
+      - university application steps
+      - how do i get into university
+
+  # =========================
+  # UNIVERSITY LIFE
+  # =========================
+  - intent: ask_university_life
+    examples: |
+      - what is university life like
+      - what happens in university
+      - is university hard
+      - what is it like to study at university
+      - how is university different from school
+      - what should i expect at university
+      - what is student life like
+      - is university stressful
+      - how do students live at university
+      - what is campus life like
+
+  # =========================
+  # UNIVERSITY REQUIREMENTS (GENERAL)
+  # =========================
+  - intent: ask_university_requirements
+    examples: |
+      - what do universities require
+      - what are university requirements
+      - what do i need for university
+      - what qualifications are needed
+      - what is needed to get into university
+      - admission requirements for university
+      - what marks do universities look at
+      - what do i need to qualify
+      - what is required to study at university
+      - how do i qualify for university

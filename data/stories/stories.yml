@@ -46,11 +46,6 @@ stories:
       - intent: ask_aps_computation
       - action: utter_aps_computation
 
-  - story: user ask about prerequisites subjects
-    steps:
-      - intent: ask_prerequisites
-      - action: utter_prerequisites
-
   - story: user ask how to get started
     steps:
       - intent: ask_get_started

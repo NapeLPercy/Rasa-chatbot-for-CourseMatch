@@ -1,0 +1,88 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT IS APS
+  # =========================
+  - intent: ask_aps
+    examples: |
+      - what is aps
+      - explain aps
+      - what does aps mean
+      - what is an admission point score
+      - can you explain aps
+      - i don't understand aps
+      - what is aps in university applications
+      - what does aps stand for
+      - tell me about aps
+      - how would you define aps
+      - what is aps used for
+      - why do we use aps
+
+  # =========================
+  # HOW APS IS CALCULATED
+  # =========================
+  - intent: ask_aps_computation
+    examples: |
+      - how is aps calculated
+      - how do universities calculate aps
+      - calculate aps
+      - how do i work out my aps
+      - how is my aps determined
+      - what is the formula for aps
+      - how do i get my aps score
+      - how do they add aps points
+      - how does aps scoring work
+      - explain aps calculation
+      - how do i calculate my admission points
+      - how is aps worked out from marks
+
+  # =========================
+  # IMPORTANCE OF APS
+  # =========================
+  - intent: ask_aps_importance
+    examples: |
+      - why is aps important
+      - why do universities use aps
+      - why do i need an aps
+      - what is the purpose of aps
+      - why does aps matter
+      - how important is aps
+      - why is my aps score important
+      - what role does aps play
+      - why do i need to know my aps
+      - how does aps affect admission
+
+  # =========================
+  # GOOD / MINIMUM APS
+  # =========================
+  - intent: ask_aps_requirement
+    examples: |
+      - what aps do i need
+      - minimum aps required
+      - what is a good aps
+      - what aps is needed for university
+      - what aps should i aim for
+      - is my aps good enough
+      - what is the minimum aps for university
+      - what aps do i need for courses
+      - what score is considered good aps
+      - how high should my aps be
+      - what aps is required for admission
+
+  # =========================
+  # MAXIMUM APS
+  # =========================
+  - intent: ask_aps_maximum
+    examples: |
+      - what is the highest aps
+      - maximum aps score
+      - what is the full aps score
+      - what is the top aps you can get
+      - how high can aps go
+      - is there a maximum aps
+      - what is perfect aps
+      - what is the best possible aps
+      - what is the highest admission score
+      - aps limit
+      - can aps be more than 100

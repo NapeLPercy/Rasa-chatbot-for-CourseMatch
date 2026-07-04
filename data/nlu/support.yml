@@ -1,0 +1,34 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # SUPPORT HELP
+  # =========================
+  - intent: ask_support
+    examples: |
+      - i need help
+      - how do i get support
+      - contact support
+      - i have a problem
+      - something is not working
+      - i need assistance
+      - help me please
+      - report an issue
+      - technical help
+      - i need customer support
+
+  # =========================
+  # FEEDBACK
+  # =========================
+  - intent: ask_feedback
+    examples: |
+      - how do i give feedback
+      - i want to give feedback
+      - report a bug
+      - suggest a feature
+      - can i suggest improvements
+      - where do i send feedback
+      - i have suggestions
+      - i want to report a problem
+      - how can i improve this
+      - can i rate this app

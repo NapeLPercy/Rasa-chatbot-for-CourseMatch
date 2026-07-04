@@ -1,0 +1,17 @@
+version: "3.1"
+
+rules:
+  - rule: AI features
+    steps:
+      - intent: ask_ai_features
+      - action: utter_ai_features
+
+  - rule: AI recommendations
+    steps:
+      - intent: ask_ai_recommendations
+      - action: utter_ai_recommendations
+
+  - rule: Chatbot explanation
+    steps:
+      - intent: ask_chatbot
+      - action: utter_chatbot

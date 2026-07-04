@@ -1,0 +1,18 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # ACCOUNT BASICS
+  # =========================
+  - intent: ask_account
+    examples: |
+      - how do i create an account
+      - do i need an account
+      - how do i sign up
+      - how do i log in
+      - account creation
+      - how do i access my profile
+      - do i need to register
+      - how does login work
+      - can i use without signing up
+      - what is my account for

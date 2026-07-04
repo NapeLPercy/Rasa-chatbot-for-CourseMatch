@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+  - rule: What is university
+    steps:
+      - intent: ask_what_is_university
+      - action: utter_what_is_university
+
+  - rule: University types
+    steps:
+      - intent: ask_university_types
+      - action: utter_university_types
+
+  - rule: Choose university
+    steps:
+      - intent: ask_choose_university
+      - action: utter_choose_university
+
+  - rule: University application
+    steps:
+      - intent: ask_university_application
+      - action: utter_university_application
+
+  - rule: University life
+    steps:
+      - intent: ask_university_life
+      - action: utter_university_life
+
+  - rule: University requirements
+    steps:
+      - intent: ask_university_requirements
+      - action: utter_university_requirements

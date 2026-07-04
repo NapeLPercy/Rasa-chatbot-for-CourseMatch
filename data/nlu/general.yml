@@ -1,0 +1,149 @@
+version: "3.1"
+
+nlu:
+  # ==========================
+  # GREETINGS
+  # ==========================
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - hey there
+      - hello there
+      - good morning
+      - good afternoon
+      - good evening
+      - what's up
+      - yo
+      - greetings
+      - hi chatbot
+      - hello bot
+      - nice to meet you
+      - good day
+
+  # ==========================
+  # GOODBYE
+  # ==========================
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - catch you later
+      - i'm leaving
+      - that's all
+      - talk to you later
+      - have a nice day
+      - thanks bye
+      - see you next time
+      - until next time
+      - bye for now
+      - cheers
+      - i'm done
+      - exit
+
+  # ==========================
+  # AFFIRM
+  # ==========================
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - yep
+      - yup
+      - absolutely
+      - definitely
+      - of course
+      - sure
+      - okay
+      - ok
+      - sounds good
+      - that's right
+      - correct
+      - please do
+      - go ahead
+
+  # ==========================
+  # DENY
+  # ==========================
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+      - i don't think so
+      - no thanks
+      - that's incorrect
+      - never mind
+      - not now
+      - don't do that
+      - stop
+      - cancel
+      - that's not what i meant
+      - negative
+      - i changed my mind
+      - no thank you
+
+  # ==========================
+  # THANK YOU
+  # ==========================
+  - intent: thank_you
+    examples: |
+      - thanks
+      - thank you
+      - thank you so much
+      - thanks a lot
+      - appreciate it
+      - much appreciated
+      - cheers
+      - that's helpful
+      - you've been helpful
+      - awesome thanks
+      - perfect thank you
+      - thank you very much
+      - thanks for your help
+      - many thanks
+      - i appreciate your help
+
+  # ==========================
+  # BOT CHALLENGE
+  # ==========================
+  - intent: bot_challenge
+    examples: |
+      - are you a bot
+      - are you human
+      - who are you
+      - what are you
+      - am i talking to a bot
+      - is this an ai
+      - are you an ai
+      - are you a real person
+      - who am i chatting with
+      - what should i call you
+      - who created you
+      - are you ChatGPT
+      - are you CourseMatch AI
+      - tell me about yourself
+      - introduce yourself
+
+  # ==========================
+  # OUT OF SCOPE
+  # ==========================
+  - intent: out_of_scope
+    examples: |
+      - what's the weather today
+      - tell me a joke
+      - who won the world cup
+      - what's your favourite colour
+      - who is the president
+      - sing me a song
+      - can you cook
+      - tell me today's news
+      - what's 2 plus 2
+      - write me a poem
+      - do my homework
+      - recommend a movie
+      - what's your age
+      - can you dance
+      - where do you live

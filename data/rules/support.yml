@@ -1,0 +1,12 @@
+version: "3.1"
+
+rules:
+  - rule: Support request
+    steps:
+      - intent: ask_support
+      - action: utter_support
+
+  - rule: Feedback request
+    steps:
+      - intent: ask_feedback
+      - action: utter_feedback

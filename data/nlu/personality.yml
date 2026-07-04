@@ -1,0 +1,82 @@
+version: "3.1"
+
+nlu:
+  # =========================
+  # WHAT IS PERSONALITY PROFILE
+  # =========================
+  - intent: ask_about_personality_profile
+    examples: |
+      - what is a personality profile
+      - what does personality profile mean
+      - explain personality profile
+      - what is the purpose of the personality profile
+      - why do i need a personality profile
+      - what is this personality test
+      - what is the profile used for
+      - why is personality profiling important
+      - tell me about personality profile
+      - how does personality profile work
+
+  # =========================
+  # PURPOSE (VERY IMPORTANT FOR COURSE MATCHING)
+  # =========================
+  - intent: ask_personality_purpose
+    examples: |
+      - why do i need to complete it
+      - what is it used for
+      - how does it help me choose a course
+      - why does coursematch need my personality
+      - how does this affect recommendations
+      - what do you do with my answers
+      - why are you asking these questions
+      - how does personality help with careers
+      - what is the point of this profile
+      - how does it improve suggestions
+
+  # =========================
+  # HOW TO COMPLETE IT
+  # =========================
+  - intent: ask_how_to_complete_personality_profile
+    examples: |
+      - how do i fill in the personality profile
+      - how do i complete it
+      - what should i answer
+      - how does the personality test work
+      - can you help me answer it
+      - what do i choose in the profile
+      - how do i submit my answers
+      - what is the correct way to fill it
+      - how do i do the personality questions
+      - step by step how do i complete it
+
+  # =========================
+  # ACCURACY / TRUST
+  # =========================
+  - intent: ask_personality_accuracy
+    examples: |
+      - is the personality profile accurate
+      - does it really work
+      - can it predict my career
+      - how reliable is it
+      - what if i answer wrong
+      - can i change my answers
+      - will it affect my results badly
+      - is this scientifically accurate
+      - how confident is the system
+      - does it really know me
+
+  # =========================
+  # RECOMMENDATION LINK (KEY INTENT)
+  # =========================
+  - intent: ask_personality_recommendation_link
+    examples: |
+      - how does it affect course recommendations
+      - how does personality affect what i study
+      - why do you use personality for courses
+      - how does it match me to careers
+      - how does it influence suggestions
+      - how does it decide my career path
+      - how is personality used in matching
+      - how do you connect personality to courses
+      - why is personality part of recommendations
+      - how does it help choose my degree
